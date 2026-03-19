@@ -1,0 +1,46 @@
+/* Caption positioning */
+.carousel-caption {
+  bottom: 20%;
+  text-align: left;
+}
+
+/* Initial hidden state */
+.carousel-caption h2,
+.carousel-caption p,
+.carousel-caption button {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+/* Active slide animation */
+.carousel-item.active .carousel-caption h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+.carousel-item.active .carousel-caption p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.carousel-item.active .carousel-caption button {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.9s;
+}
+
+/* Optional: Bigger bold heading */
+.carousel-caption h2 {
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+/* Optional: Paragraph styling */
+.carousel-caption p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
