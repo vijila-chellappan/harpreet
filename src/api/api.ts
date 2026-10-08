@@ -5,4 +5,5 @@ export const API_ENDPOINTS = {
   SERVICES: "/services",
   CONTACTS: "/contacts",
   BLOGS: "/blogs",
+  BLOG_ENQUIRIES: "/blog-enquiries",
 };

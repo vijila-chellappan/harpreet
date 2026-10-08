@@ -24,7 +24,6 @@ const BlogEditor = ({ value, onChange }: Props) => {
     }
   });
 
-  /* ✅ IMPORTANT FIX */
   useEffect(() => {
     if (editor && value !== editor.getHTML()) {
       editor.commands.setContent(value);

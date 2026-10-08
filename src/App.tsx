@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import PublicLayout from "./components/PublicLayout";
 import Home from "./pages/Home";
-import BlogPage from "./pages/Blog";
 import AdminRoutes from "./admin/AdminRoutes";
 import Login from "./admin/pages/Login";
+import BlogPage from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route element={<PublicLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />
         </Route>
 
         {/* ADMIN ROUTES */}
